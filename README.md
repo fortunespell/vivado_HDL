@@ -10,11 +10,11 @@ The bcdtb module is a testbench that simulates the behavior of the bcdcounter mo
 
 Ports
 
-clk: Clock signal (reg)
+``clk: Clock signal (reg)``
 
-rst: Reset signal (reg)
+``rst: Reset signal (reg)``
 
-count: 4-bit output from the BCD counter (wire)
+``count: 4-bit output from the BCD counter (wire)``
 
 Functionality
 
@@ -33,13 +33,21 @@ updown Module
 The updown module takes a clock input (clk) and a reset input (rst), and produces a 4-bit count output (count).
 
 Ports
-clk: Clock input
-rst: Reset input (active high)
-count: 4-bit count output (reg)
+
+``clk: Clock input``
+
+``rst: Reset input (active high)``
+
+``count: 4-bit count output (reg)``
+
 Functionality
+
 On the rising edge of the clock (clk):
+
 If rst is asserted (high), the count is reset to 4'b0000.
+
 Otherwise, the count is incremented by 1.
+
 
 ### Simulation
 
@@ -57,9 +65,9 @@ The decoder module takes a 2-bit input and produces a 4-bit output. Depending on
 
 Ports
 
-i: 2-bit binary input
+``i: 2-bit binary input``
 
-y: 4-bit one-hot output (reg)
+``y: 4-bit one-hot output (reg)``
 
 Functionality
 
@@ -82,13 +90,13 @@ The dflipflop module captures the value of din (data input) on the rising edge o
 
 Ports
 
-clk: Clock input
+``clk: Clock input``
 
-rst: Reset input (active high)
+``rst: Reset input (active high)``
 
-din: Data input
+``din: Data input``
 
-q: Data output (reg)
+``q: Data output (reg)``
 
 Functionality
 
@@ -113,15 +121,15 @@ The jkflipflop module takes a clock input (clk), a reset input (reset), a preset
 
 Ports
 
-clk: Clock input
+``clk: Clock input``
 
-reset: Asynchronous reset input (active high)
+``reset: Asynchronous reset input (active high)``
 
-preset: Asynchronous preset input (active high)
+``preset: Asynchronous preset input (active high)``
 
-jk: 2-bit JK control input
+``jk: 2-bit JK control input``
 
-q: Output (reg)
+``q: Output (reg)``
 
 Functionality
 
@@ -153,11 +161,11 @@ The mux module takes an 8-bit input i and a 3-bit select signal s, and produces 
 
 Ports
 
-i: 8-bit input data
+``i: 8-bit input data``
 
-s: 3-bit select input
+``s: 3-bit select input``
 
-y: Single-bit output (reg)
+``y: Single-bit output (reg)``
 
 Functionality
 
@@ -180,11 +188,11 @@ The encoderpri module takes an 8-bit input d and an enable signal en, and produc
 
 Ports
 
-d: 8-bit input data
+``d: 8-bit input data``
 
-en: Enable signal (active low)
+``en: Enable signal (active low)``
 
-b: 3-bit binary output (reg)
+``b: 3-bit binary output (reg)``
 
 Functionality
 
@@ -210,11 +218,11 @@ The demux14 module takes a single-bit input and a 2-bit select signal and produc
 
 Ports
 
-i: 1-bit input
+``i: 1-bit input``
 
-s: 2-bit select input
+``s: 2-bit select input``
 
-y: 4-bit output (reg)
+``y: 4-bit output (reg)``
 
 Functionality
 
@@ -237,11 +245,11 @@ The encoder module takes an 8-bit input d and an enable signal en, and produces 
 
 Ports
 
-d: 8-bit input data
+``d: 8-bit input data``
 
-en: Enable signal (active low)
+``en: Enable signal (active low)``
 
-b: 3-bit binary output (reg)
+``b: 3-bit binary output (reg)``
 
 Functionality
 
